@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+
+  data-be:
+    image: openjdk:23
+    container_name: data-be
+    ports:
+      - 8081:8080
+      - 8001:8000
+
+    expose:
+      - "8001"
+
+    depends_on:
+      - data-db
+    networks:
+      - my-net
+      #- shared-net
+    volumes:
+      #- ./build/libs/DataCollector-0.0.1-SNAPSHOT.jar:/app/app.jar
+      - ./DataCollector-0.0.1-SNAPSHOT.jar:/app/app.jar
+
+
+    working_dir: /app
+    entrypoint: java -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -jar /app/app.jar
+  data-db:
+    image: mongo:5.0
+    container_name: data-db
+    ports:
+      - 27018:27017
+    networks:
+      - my-net
+      #- shared-net
+networks:
+  my-net:
+    driver: "bridge"
+    name: my-net
+  #shared-net:
+    #external: true
+
