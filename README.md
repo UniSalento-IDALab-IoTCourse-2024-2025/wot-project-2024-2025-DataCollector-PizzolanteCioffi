@@ -52,7 +52,7 @@ L’applicazione consente all’utente di visualizzare in tempo reale i dati rac
 - Notification Service: [Notification](https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-Notification-PizzolanteCioffi)
 - AIModel Service: [AIModel](https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-AIModel-PizzolanteCioffi)
 - Frontend: [Frontend](https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-Frontend-PizzolanteCioffi)
-- Pagina web: [Presentation](https://github.com/UniSalento-IDALab-IoTCourse-2024-2025/wot-project-2024-2025-Presentation-PizzolanteCioffi)
+- Pagina web: [Presentation](https://unisalento-idalab-iotcourse-2024-2025.github.io/wot-project-2024-2025-Presentation-PizzolanteCioffi/)
 
 ## DataCollector Service
 
